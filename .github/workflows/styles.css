@@ -1,0 +1,242 @@
+html{
+    font-size: 16px;
+    font-family: Uchen;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>Navigation Section<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+}
+
+.navbar{
+    background-color: darkgray;
+    font-size: .90rem;
+    justify-content: right;
+    border-radius: 10px;
+}
+
+#navbar-image{
+    height: 75px;
+    width: 75px;
+    margin: .45rem;
+    border-radius: 10px;
+     
+}
+
+.navbar-logo{
+    flex: 1;
+}
+
+
+#list {
+    display: inline-flex;
+    list-style: none;
+    padding: .5rem;
+
+}
+
+li{
+    padding: .5rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    color: rgb(223, 223, 3);
+    transition: .75s;
+}
+
+.link:active {
+    transform: translateY(20px);
+}
+
+/* >>>>>>>>>>>>>>>>>>>Main Section<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.main-section-container{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+    
+    min-width: 600px;
+    
+}
+
+.main-section{
+    
+    background-image: url("Images/nastya-kvokka-vdD1rcsdL3E-unsplash.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 95%;
+    height:50rem;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 600px;
+    
+}
+#main-heading{
+    display: block;
+    font-size: 6rem;
+    font-weight: bolder;
+    color: white;
+}
+
+#main-heading-tag{
+    display: block;
+    color: white;
+    font-size: 4rem;
+}
+
+/* Blurb Section */
+
+.blurb-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+}
+
+.blurb-text{
+    
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>Services Section<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.services-section-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+
+}
+
+
+.service-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.service-card-one, .service-card-two{
+    box-sizing: border-box;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 10px;
+    
+}
+
+.service-card-one{
+    background-image: url("Images/luis-feliciano-9EH5AkClwZ0-unsplash.jpg"); 
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    object-fit: fill;
+    
+}
+
+.service-card-two{
+    background-image: url("Images/daniel-lincoln-jTXjghJhTlE-unsplash.jpg");
+    background-size: 500px;
+
+}
+
+.service-card-text{
+    font-size: 4rem;
+    color: white;
+    
+}
+a {
+    text-decoration: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Contact Spot<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: gray;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#address{
+    display: flex;
+    justify-content: left;
+    margin: auto;
+}
+
+
+#postal-address{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    padding: 0;
+    
+}
+
+#phone-and-email{
+    display: flex;
+    margin-left: auto;
+    
+    justify-content: right;
+}
+
+#phone-email{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    
+}
+
+/* Small screen */
+
+@media only screen and (max-width: 800px){
+
+    .main-section{
+        flex-shrink: 2;
+    }
+
+    #main-heading{
+        position: relative;
+        bottom: -12rem;
+        left: -5rem;
+        top: auto;
+        font-size: 3rem;
+        
+        
+    }
+
+    #main-heading-tag{
+        position: relative;
+        bottom: -16rem;
+        left: -5rem;
+        font-size: 2rem;
+        
+        
+    }
+}
