@@ -1,3 +1,3 @@
 # digsholes
 
-Just a sample project for Codecademy
+An exercise project for Codecademy focusing on CSS. 
